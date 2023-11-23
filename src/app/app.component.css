@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.card-cont{
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+main{
+    background-color:#faebd7;
+    height: 100%;
+}
