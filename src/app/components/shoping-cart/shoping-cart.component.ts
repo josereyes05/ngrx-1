@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { Appstate } from 'src/app/app.state';
 import { Products } from 'src/app/models/prod.model';
+import { delSavedProd } from 'src/app/store/prod.actions';
 
 @Component({
   selector: 'app-shoping-cart',
@@ -20,4 +21,9 @@ export class ShopingCartComponent {
       this.prod = prod
     })
   }
+
+  delprod(id: number){
+    this.store.dispatch(delSavedProd({id}))
+  }
+
 }

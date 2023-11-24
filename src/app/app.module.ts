@@ -20,7 +20,7 @@ import { SavedProdReducer } from './store/prod.reducer';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot({savedProd: SavedProdReducer}, {}),
+    StoreModule.forRoot({savedProd: SavedProdReducer, delSavedProd: SavedProdReducer}),
     HttpClientModule
   ],
   providers: [],
